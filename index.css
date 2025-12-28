@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fdfaf3;
+}
+
+/* Header Setup */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Flexbox (Kani waa kan xallinaya qoraalka iyo sawirka is ag yaal) */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.sub-title {
+    color: #7fad39;
+    font-weight: bold;
+}
+
+.btn-shop {
+    background-color: #7fad39;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero-image img {
+    width: 450px;
+    border-radius: 15px;
+}
+
+/* Product Grid (8 Boxes) */
+.featured {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Tani waxay saamaxaysaa in 4 kor iyo 4 hoos ay noqdaan */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    flex: 1 1 calc(25% - 20px); /* 4 sanduuq hal saf */
+    border-radius: 10px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Si sawirku uusan u dhibsemin */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cost {
+    color: #7fad39;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
